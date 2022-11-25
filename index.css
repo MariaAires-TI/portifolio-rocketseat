@@ -1,0 +1,339 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.corpo {
+    display: grid;
+    grid-template-areas:
+    "aside article"
+    "footer footer";
+    grid-template-columns: 348px  calc(100% - 348px);
+    margin: 20px;
+    grid-column-gap: 30px
+}
+
+aside {
+    grid-area: aside
+}
+
+article { 
+    grid-area: article; 
+}
+
+footer {
+    grid-area: footer;
+}
+
+.cards {
+    background-color: var(--bg-cards); 
+    border-radius: 20px;
+    margin-bottom: 30px;
+    min-width: 348px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    height: 292px;
+    width: 348px;     
+}
+
+.perfil img {
+    display:inline-block;  
+    border: 2px solid #00FF00;
+    width: 128px;
+    height: 128px;        
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    color: var(--text-color);
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;   
+    height: 26px;
+    margin-bottom: 0px;
+}
+
+.nivel {
+    display: flex;
+    justify-content: center;
+    width: 128px;
+    height: 17px;
+    margin-top: 0px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #837E9F;   
+}
+
+.info div img{    
+    color: var(--bg-cards);   
+    width: 24px;
+    height: 24px;
+    margin-left: 40px;
+    margin-top: 30px;   
+}
+
+.info div {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    height: 16px;
+    width: 157px;
+    margin-bottom: 29px;
+    margin-top: 28px;
+    font-family: Merriweather Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}   
+
+
+.info {
+    height: 348px;
+    width: 348px;
+}
+
+.div-tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 208px;
+    width: 348px;    
+    border-color: var(--bg-cards);    
+    margin-top: 30px;   
+}
+
+h1 {
+    width: 100%;
+    color: var(--text-color);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.tecnologias {
+    display: grid;    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tecnologias div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 86px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: var(--bg-techs);
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #000;
+}
+
+.educacao {  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 208px;
+    width: 348px;
+}
+
+
+
+li {
+    font-family: Merriweather Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+.projetos p{
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.onix {
+    display: flex;
+    gap: 30px;
+}
+
+.my-onix {    
+    width: 100%;
+    height: 186px;    
+}
+
+.my-onix img {
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 16px
+}
+
+.img-myonix {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+
+.text-myonix{
+    margin-right: 10px;
+    margin-left: 30px;
+    width: 421px;
+    height: 19px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rodape {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.js {
+    display: flex;
+    align-items: baseline;
+    height: 32px;
+    width: 140px;
+    margin-left: 95px;
+    gap: 8px;
+    
+}
+
+.bola-amarela {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-color: #837E9F;
+    background-color: #E7DE79;
+}
+
+.post {
+    display: flex;
+    align-content: center;   
+    height: 86px;    
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.post p {
+    font-family: Merriweather Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.menssege {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    height: 201px;    
+}
+
+.menssege img {
+    display:inline-block;    
+    margin-left: 30px;
+    width: 128px;
+    height: 128px;        
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menssege div {
+    display: flex;
+}
+
+.menssege p {
+    font-family: Merriweather Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 27px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+} 
+
+footer p {
+    font-family: Merriweather Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #837E9F;
+}
+
+
+@media screen and (max-width: 300px) {
+  
+    .perfil {  
+        height: 192px;
+        width: 248px;     
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .corpo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .onix {
+        flex-direction: column;
+    }
+}
